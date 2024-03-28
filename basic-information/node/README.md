@@ -1,5 +1,5 @@
 # Odin Project - Basic Info Site
-![basic info site](site.png)
+![basic info site](basic-information/node/node-site.png)
 
 # Usage
 - Clone this repo

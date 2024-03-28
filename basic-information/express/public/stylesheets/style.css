@@ -1,0 +1,61 @@
+/* General body styling */
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	margin: auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	color: #333;
+	width: 800px;
+}
+
+/* Header styling */
+h1 {
+	color: #2e6c80;
+	text-align: center;
+}
+
+/* Error status styling, if present */
+h2 {
+	color: #d9534f; /* Bootstrap 'danger' color for errors */
+	text-align: center;
+}
+
+/* Preformatted text styling for error stack trace */
+pre {
+	background-color: #ececec;
+	border: 1px solid #ddd;
+	padding: 10px;
+	overflow: auto; /* Ensures content fits within the block */
+	line-height: 1.45;
+	border-radius: 4px;
+	margin-top: 20px; /* Adds some space above the stack trace */
+}
+
+/* Navigation styling */
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #2e6c80;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background-color: #1b4f56;
+	color: #ffffff;
+}
+
+/* Enhances readability and provides a visual cue for navigation */

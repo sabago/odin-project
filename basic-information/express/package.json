@@ -1,0 +1,22 @@
+{
+	"name": "sabago-express-basic-info-site",
+	"version": "1.0.0",
+	"description": "odin project - express basic info site by sabago",
+	"main": "app.js",
+	"scripts": {
+		"start": "node ./bin/www",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint *.js"
+	},
+	"author": "sabago",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"express": "^4.19.2",
+		"morgan": "^1.10.0",
+		"pug": "^3.0.2"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0"
+	}
+}

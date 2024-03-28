@@ -1,8 +1,73 @@
+/* Customizes the overall body background and text color for better readability */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #f8f9fa; /* A light grey background */
+	color: #212529; /* Bootstrap's default text color */
+	width: 800px;
+	margin: auto;
 }
 
-a {
-  color: #00B7FF;
+/* Enhances the sidebar navigation */
+.sidebar-nav {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar-nav li {
+	padding: 10px 0;
+}
+
+.sidebar-nav li a {
+	color: #007bff; /* Bootstrap primary color */
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.sidebar-nav li a:hover {
+	color: #0056b3; /* A darker shade for hover effect */
+}
+
+/* Adds a custom style for the horizontal rule to visually separate sections */
+hr {
+	border-top: 1px solid #6c757d; /* Bootstrap's secondary color */
+}
+
+/* Customizes the look of buttons to make them stand out more */
+.btn-custom {
+	background-color: #28a745; /* Bootstrap success color */
+	color: #fff; /* White text */
+	border-radius: 0.25rem; /* Matches Bootstrap's border radius */
+	padding: 0.375rem 0.75rem; /* Matches Bootstrap's padding */
+	transition: background-color 0.15s ease-in-out;
+}
+
+.btn-custom:hover {
+	background-color: #218838; /* A darker shade for hover effect */
+}
+
+/* Styles for form elements to enhance readability and focus */
+input[type="text"],
+input[type="date"],
+select.form-control {
+	border: 1px solid #ced4da; /* Bootstrap's input border color */
+	border-radius: 0.25rem; /* Matches Bootstrap's border radius */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select.form-control:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap's focus shadow */
+}
+
+/* Custom styles for list items and links within content area */
+.content ul li {
+	margin-bottom: 0.5rem;
+}
+
+.content ul li a {
+	color: #007bff; /* Bootstrap primary color */
+	transition: color 0.3s ease-in-out;
+}
+
+.content ul li a:hover {
+	color: #0056b3; /* A darker shade for hover effect */
 }

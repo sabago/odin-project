@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Update Genre: #{genre.name}
+
+  form(method='POST' action='')
+    .form-group
+      label(for='name') Name
+      input#name.form-control(type='text', name='name', value=genre.name, required='true')
+    button.btn.btn-primary(type='submit') Update

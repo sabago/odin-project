@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Update Author: #{author.name}
+
+  form(method='POST' action='')
+    .form-group
+      label(for='name') Name
+      input#name.form-control(type='text', name='name', value=author.name, required='true')
+    .form-group
+      label(for='date_of_birth') Date of Birth
+      input#date_of_birth.form-control(type='date', name='date_of_birth', value=author.date_of_birth_yyyy_mm_dd)
+    .form-group
+      label(for='date_of_death') Date of Death
+      input#date_of_death.form-control(type='date', name='date_of_death', value=author.date_of_death_yyyy_mm_dd)
+    button.btn.btn-primary(type='submit') Update

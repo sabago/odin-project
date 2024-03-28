@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div(class='nav')
+    a(href='/') Go back to homepage
+  h1 Post a New Message
+  form(method="POST" action="/new")
+    div
+      label(for="user") Author's Name:
+      input#user(type="text" name="user" required)
+    div
+      label(for="text") Message:
+      textarea#text(name="text" required)
+    div
+      input(type="submit" value="Submit")

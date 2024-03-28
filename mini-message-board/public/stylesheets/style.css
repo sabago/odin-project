@@ -1,0 +1,107 @@
+/* Reset margin and padding for all elements */
+* {
+	width: 800px;
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #f4f4f4;
+	padding: 20px;
+	line-height: 1.6;
+}
+
+/* Header styles */
+h1 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* Navigation styles */
+.nav {
+	margin-bottom: 20px;
+}
+
+.nav a {
+	display: inline-block;
+	background-color: #007bff;
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+	background-color: #0056b3;
+}
+
+/* Terminal-like interface for messages */
+.terminal {
+	background-color: #000;
+	color: #0f0;
+	padding: 20px;
+	border-radius: 5px;
+	font-family: "Courier New", monospace;
+}
+
+.terminal .header {
+	display: flex;
+	justify-content: start;
+	margin-bottom: 20px;
+}
+
+.terminal .circle {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.red-bg {
+	background-color: #ff605c;
+}
+.yellow-bg {
+	background-color: #ffbd44;
+}
+.green-bg {
+	background-color: #00ca56;
+}
+
+.terminal .content p {
+	margin-bottom: 10px;
+}
+
+/* Input styles for form */
+form {
+	margin-top: 20px;
+}
+
+form .user-input {
+	padding: 10px;
+	margin: 5px 0;
+	width: calc(100% - 22px); /* Adjusting for padding */
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+form .user-name-input {
+	margin-right: 10px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #218838;
+}

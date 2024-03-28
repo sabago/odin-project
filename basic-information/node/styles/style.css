@@ -1,0 +1,43 @@
+/* General body styling */
+body {
+	font-family: Arial, sans-serif;
+	margin: auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	color: #333;
+	width: 800px;
+}
+
+/* Header styling */
+h1 {
+	color: #007bff;
+	text-align: center;
+}
+
+/* Paragraph styling */
+p {
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+/* Ordered list styling */
+ol {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	list-style-position: inside;
+}
+
+/* Link styling */
+ol a {
+	color: #007bff;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+ol a:hover {
+	color: #0056b3;
+}
+
+/* Specific page styling */
+/* You might want to add specific IDs or classes to your HTML elements for more targeted styling */

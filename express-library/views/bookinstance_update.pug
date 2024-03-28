@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Update BookInstance: #{bookinstance.book.title} - #{bookinstance.imprint}
+
+  form(method='POST' action='')
+    .form-group
+      label(for='status') Status
+      select#status.form-control(name='status')
+        option(value='Available' selected=(bookinstance.status=='Available')) Available
+        option(value='Maintenance' selected=(bookinstance.status=='Maintenance')) Maintenance
+        option(value='Loaned' selected=(bookinstance.status=='Loaned')) Loaned
+        option(value='Reserved' selected=(bookinstance.status=='Reserved')) Reserved
+    .form-group
+      label(for='due_back') Due Back
+      input#due_back.form-control(type='date', name='due_back', value=bookinstance.due_back_formatted)
+    button.btn.btn-primary(type='submit') Update

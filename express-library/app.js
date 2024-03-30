@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('dotenv').config();
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -14,7 +15,8 @@ const app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://sabago:gr%40ph3n3@cluster0.g7ymktv.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+// eslint-disable-next-line no-undef
+const mongoDB = process.env.MONGODB
 
 main().catch((err) => console.log(err));
 async function main() {
